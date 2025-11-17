@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/NameLogo.png" alt="NameLogo" class="NameLogo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contect">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="heading-text">
+                <p>Full Stack Developer(MERN). </p>
+                <h1>Hi, I am <span>Dipul Raj</span></h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ---------About Section--------- -->
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1-col">
+                    <img src="images/DiImage.png" alt="myImage" id="img">
+                </div>
+
+                <div class="about-2-col">
+                    <h1 class="S-title">About me</h1>
+
+                    <p>
+                        I'm a passionate Full Stack Developer with hands-on experience in building
+                        responsive and scalable web applications. I specialize in both frontend and
+                        backend development using modern technologies like HTML, CSS, JavaScript,
+                        React.js, Node.js, Express, and MongoDB. I love turning complex problems into
+                        clean, user-friendly solutions and constantly strive to learn new tools and best
+                        practices to improve my development workflow. Whether working independently or in
+                        a team, I aim to deliver high-quality code and impactful digital experiences.
+                    </p>
+
+                    <div class="tab-title">
+                        <div class="tab-link active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-link" onclick="opentab('internship')">Internship</div>
+                        <div class="tab-link" onclick="opentab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack</span><br>Full Stack Developer.</li>
+                            <li><span>MERN Stack</span><br>MERN Stack Developer.</li>
+                            <li><span>UI/UX</span><br>UI/UX Designer.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>Web Dev</span><br>In Full Stack development.</li>
+                            <li><span>MERN Stack</span><br>In MERN Stack development.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.C.A (2023 - 2026)</span><br>From Teerthanker Mahaveer University, Moradabad.
+                            </li>
+                            <li><span>11<sup>th </sup> - 12<sup>th</sup> (2020 - 2022)</span><br>From Bihar School
+                                Examination Board, Patna.</li>
+                            <li><span>9<sup>th </sup> - 10<sup>th</sup> (2018 - 2020)</span><br>From Bihar School
+                                Examination Board, Patna.</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------Services------------ -->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="S-title">Services</h1>
+
+
+            <div class="services-list">
+
+                <div>
+                    <h1>Web App Development</h1>
+                    <p>
+                        I develop high-performance and scalable web applications using the MERN stack. From reusable
+                        frontend components to secure backend architectures, I build complete end-to-end solutions
+                        tailored to business needs.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h1>API & Backend Development</h1>
+                    <p>
+                        I design and build secure, optimized, and scalable REST APIs using Node.js and Express. I handle
+                        authentication, database modeling, data processing, and backend logic to deliver reliable
+                        server-side architectures.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <h1>Frontend UI / UX Development</h1>
+                    <p>
+                        I create clean, responsive, and interactive user interfaces using React.js. I focus on intuitive
+                        layouts, smooth functionality, and cross-device responsiveness to deliver modern web
+                        experiences.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ---------------Portfolio Section-------------------- -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="S-title">My projects</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/Project1.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Travleling Web App</h3>
+                        <p>
+                            Traveling Web helps users discover new destinations and connect with local travel experts
+                            through a clean, fast, and user-friendly platform.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Project2.webp" alt="">
+                    <div class="layer">
+                        <h3>Blog Web App</h3>
+                        <p>
+                            An easy-to-use blogging platform that lets users write, manage, and share posts with a
+                            smooth, distraction-free experience.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Project3.jpg" alt="">
+                    <div class="layer">
+                        <h3>E Commerce Web App</h3>
+                        <p>
+                            An easy and secure e-commerce platform for browsing products, managing carts, and completing
+                            fast, reliable checkouts.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ---------------Contect Section-------------------- -->
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Contact: rajdipul86@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://in.linkedin.com/in/dipulraj"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DipulRaj"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/dipulraj390"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    <span id="msg-error"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------CopyRight Section-------------------- -->
+        <div class="copyright">
+            <p>Copyright © Dipul. Made by Dipul Raj</p>
+        </div>
+
+    </div>
+
+
+    <script>
+        let tablinks = document.querySelectorAll(".tab-link");
+        let tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzh6Bml1bGCafId9SycRvJyuMed3lO8INa06BqAz4Rto1sWbpLgPqtjr-bjsAIOqH9GyA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+        const msgError = document.getElementById("msg-error");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msgError.innerHTML = "Something went wrong.";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+        })
+    </script>
+
+
+</body>
+
+</html>
